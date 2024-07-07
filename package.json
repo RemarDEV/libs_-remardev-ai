@@ -1,6 +1,6 @@
 {
   "name": "@remardev/ai",
-  "version": "0.1.12",
+  "version": "0.1.14",
   "module": "index.ts",
   "main": "index.ts",
   "type": "module",

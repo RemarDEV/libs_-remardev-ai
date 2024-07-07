@@ -190,16 +190,18 @@ The output is `DataType.Audio`.
 
 ### Speech-to-Text (STT)
 
-This tool is used to convert speech into text. The speech that is being converted is the input data from previous item in the pipeline (tool or source). Only supported language is English, for now.
+This tool is used to convert speech into text. The speech that is being converted is the input data from previous item in the pipeline (tool or source). You can also specify the language, but the text will be translated into english; If you don't want that, you can pass the output to the Text Translation tool.
+
+Currently, only Czech and English languages were tested and are working.
 
 ```typescript
-Tool.STT(<Format - m4a or wav - default is wav>);
+Tool.STT(<Format - m4a or wav - default is wav>, <Language>);
 ```
 
-for example with m4a format:
+for example with m4a format and Czech language:
 
 ```typescript
-Tool.STT("m4a");
+Tool.STT("m4a", Language.Czech);
 ```
 
 The output is `DataType.Text`.
