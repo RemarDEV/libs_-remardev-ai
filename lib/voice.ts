@@ -1,6 +1,6 @@
 enum Voice {
-  Dave = 5000,
-  Jane = 4000,
+  Dave = "p330",
+  Jane = "p243",
 }
 
 export default Voice;
